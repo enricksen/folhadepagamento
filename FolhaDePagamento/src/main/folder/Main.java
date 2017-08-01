@@ -27,7 +27,7 @@ public class Main {
 		while(end) {
 
 			loop = true;
-			System.out.println("======== Folha de Pagamento! ========");
+			System.out.println("======== Folha de Pagamento ========");
 			System.out.println("*** Menu Principal ***");
 			System.out.println("1 - Adicionar Empregado");
 			System.out.println("2 - Remover Empregado");
