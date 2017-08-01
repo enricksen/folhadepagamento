@@ -11,6 +11,7 @@ public class Employee {
 	private boolean syndicated;
 	private int syndicateNumber;
 	private float syndicateTax;
+	private int paymentMethod;
 
 	public Employee(int allEmployees) {
 		super();
@@ -19,10 +20,10 @@ public class Employee {
 
 		System.out.println("Digite o nome do empregado");
 		this.name = input.nextLine();
-		System.out.println("Digite o endereÃ§o do empregado");
+		System.out.println("Digite o endereço do empregado");
 		this.address = input.nextLine();
 		employeeNumber = ++allEmployees;
-		System.out.println("O usuÃ¡rio faz parte do sindicato? (true or false)");
+		System.out.println("O usuário faz parte do sindicato? (true or false)");
 		this.syndicated = input.nextBoolean();
 		if(this.syndicated) {
 			System.out.println("Digite a taxa que o empregado paga ao sindicato:");
@@ -35,6 +36,15 @@ public class Employee {
 			this.syndicateNumber = 0;
 
 		}
+		paymentMethod = 1;
+	}
+
+	public int getPaymentMethod() {
+		return paymentMethod;
+	}
+
+	public void setPaymentMethod(int paymentMethod) {
+		this.paymentMethod = paymentMethod;
 	}
 
 	public boolean isSyndicated() {
@@ -81,10 +91,10 @@ public class Employee {
 	@ Override
 	public String toString() {
 		System.out.println("Nome: "+this.getName());
-		System.out.println("EndereÃ§o: "+this.getAddress());
-		System.out.println("NÃºmero de Empregado: "+this.getEmployeeNumber());
+		System.out.println("Endereço: "+this.getAddress());
+		System.out.println("Número de Empregado: "+this.getEmployeeNumber());
 		System.out.println("Sindicalizado? "+this.isSyndicated());
-		System.out.println("NÃºmero de Sindicato: "+this.getSyndicateNumber());
+		System.out.println("Número de Sindicato: "+this.getSyndicateNumber());
 		System.out.println("Taxa de Sindicato: "+this.getSyndicateTax());
 		return "\n";
 	}

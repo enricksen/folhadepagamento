@@ -10,7 +10,7 @@ public class Salaried extends Employee {
 		super(allEmployees);
 		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
-		System.out.println("Digite o salÃ¡rio mensal do empregado");
+		System.out.println("Digite o salário mensal do empregado");
 		this.atualSalary = input.nextFloat();
 		System.out.println("Empregado cadastrado com sucesso");
 	}
@@ -27,11 +27,11 @@ public class Salaried extends Employee {
 	public String toString() {
 		System.out.println("Nome: "+this.getName());
 		System.out.println("Tipo: Assalariado");
-		System.out.println("EndereÃ§o: "+this.getAddress());
-		System.out.println("NÃºmero de Empregado: "+this.getEmployeeNumber());
-		System.out.println("SalÃ¡rio: "+this.getAtualSalary());
+		System.out.println("Endereço: "+this.getAddress());
+		System.out.println("Número de Empregado: "+this.getEmployeeNumber());
+		System.out.println("Salário: "+this.getAtualSalary());
 		System.out.println("Sindicalizado? "+this.isSyndicated());
-		System.out.println("NÃºmero de Sindicato: "+this.getSyndicateNumber());
+		System.out.println("Número de Sindicato: "+this.getSyndicateNumber());
 		System.out.println("Taxa de Sindicato: "+this.getSyndicateTax());
 		return "\n";
 	}

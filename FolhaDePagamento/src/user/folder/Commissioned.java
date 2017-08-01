@@ -11,9 +11,9 @@ public class Commissioned extends Employee {
 		super(allEmployees);
 		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
-		System.out.println("Digite o salÃ¡rio referente as primeiras duas semanas do empregado");
+		System.out.println("Digite o salário referente as primeiras duas semanas do empregado");
 		this.atualSalary = input.nextFloat();
-		System.out.println("Digite o valor de sua comissÃ£o por vendas (em porcentagem");
+		System.out.println("Digite o valor de sua comissão por vendas (em porcentagem");
 		this.comissionValue = input.nextFloat();
 		System.out.println("Empregado cadastrado com sucesso");
 	}
@@ -43,12 +43,12 @@ public class Commissioned extends Employee {
 	public String toString() {
 		System.out.println("Nome: "+this.getName());
 		System.out.println("Tipo: Comissionario");
-		System.out.println("EndereÃ§o: "+this.getAddress());
-		System.out.println("NÃºmero de Empregado: "+this.getEmployeeNumber());
-		System.out.println("SalÃ¡rio: "+this.getAtualSalary());
-		System.out.println("ComissÃ£o: "+this.getComissionValue());
+		System.out.println("Endereço: "+this.getAddress());
+		System.out.println("Número de Empregado: "+this.getEmployeeNumber());
+		System.out.println("Salário: "+this.getAtualSalary());
+		System.out.println("Comissão: "+this.getComissionValue());
 		System.out.println("Sindicalizado? "+this.isSyndicated());
-		System.out.println("NÃºmero de Sindicato: "+this.getSyndicateNumber());
+		System.out.println("Número de Sindicato: "+this.getSyndicateNumber());
 		System.out.println("Taxa de Sindicato: "+this.getSyndicateTax());
 		return "\n";
 	}
