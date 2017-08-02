@@ -244,14 +244,22 @@ public class Main {
 						questions = input.nextInt();
 						if(questions == 1) {
 							
+							System.out.println("Digite o novo nome:");
+							String nome = input.nextLine();
+							employees.get(pos).setName(nome);
+							
 						} else if(questions == 2) {
+							
+							System.out.println("Digite o novo endereço:");
+							String endereço = input.nextLine();
+							employees.get(pos).setAddress(endereço);
 							
 						} else if(questions == 3) {
 							
 						} else if(questions == 4) {
 							
 						} else if(questions == 5) {
-							
+							if(employees.get(pos).isSyndicated()) {
 						} else if(questions == 6) {
 							
 						}
